@@ -14,7 +14,7 @@ dependencies {
 ## Example
 <img src="https://github.com/yt-tkhs/MixedImage/blob/master/art/preview.gif" width="320" />
 
-## Usase
+## Usage
 
 - This is basic usage.
 - Any size of image can be accepted.
