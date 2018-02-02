@@ -25,7 +25,7 @@ publish {
     userOrg = 'yt-tkhs'
     groupId = 'jp.yitt.mixedimage'
     artifactId = 'mixedimage'
-    publishVersion = '0.1.0'
+    publishVersion = '0.1.1'
     desc = 'Image Mixing Library for Android'
     website = 'https://github.com/yt-tkhs/MixedImage'
 }
