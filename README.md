@@ -16,7 +16,9 @@ dependencies {
 
 ## Usase
 
-Below is basic usage.
+- This is basic usage.
+- Any size of image can be accepted.
+
 ```kotlin
 MixedImage.from(bitmaps)
     .size(1280f, 720f)
@@ -51,11 +53,11 @@ imageUrls.forEachIndexed { index, imageUrl ->
 }
 ```
 
-3. When all of images are loaded, it generate image and set to ImageView automatically.
+3. After all of images are loaded, it generate image and set to ImageView automatically.
 
 ## Configurations
-- size: set width and height of output image.
-- angle: `0 - 45` is recommend. If you set angle too large, it may throw OutOfMemoryException.
+- size: width and height of output image.
+- angle: clip angle of images. If you set angle too large, it may throw OutOfMemoryException.
 
 ## Author
 - Yuta Takahashi ([@yt_hizi](https://twitter.com/yt_hizi))
