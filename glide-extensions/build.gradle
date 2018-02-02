@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
 
 android {
     compileSdkVersion 26
@@ -20,6 +21,15 @@ android {
         }
     }
 
+}
+
+publish {
+    userOrg = 'yt-tkhs'
+    groupId = 'jp.yitt.mixedimage'
+    artifactId = 'glide-extensions'
+    publishVersion = '0.1.0'
+    desc = 'Glide Extensions of Image Mixing Library for Android'
+    website = 'https://github.com/yt-tkhs/MixedImage'
 }
 
 dependencies {

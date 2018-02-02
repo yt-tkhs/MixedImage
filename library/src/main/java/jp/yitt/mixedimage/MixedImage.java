@@ -10,6 +10,9 @@ public class MixedImage {
 
     /**
      * Create builder with existing bitmaps as array.
+     *
+     * @param bitmaps bitmap array that is mixed to one image.
+     * @return MixedImageRequestBuilder
      */
     public static MixedImageRequestBuilder from(Bitmap... bitmaps) {
         return new MixedImageRequestBuilder(Arrays.asList(bitmaps));
@@ -17,6 +20,9 @@ public class MixedImage {
 
     /**
      * Create builder with existing bitmaps as iterator.
+     *
+     * @param bitmaps bitmap iterator that is mixed to one image.
+     * @return MixedImageRequestBuilder
      */
     public static MixedImageRequestBuilder from(Iterator<Bitmap> bitmaps) {
         ArrayList<Bitmap> bitmapArrayList = new ArrayList<>();
@@ -29,6 +35,9 @@ public class MixedImage {
 
     /**
      * Create lazy builder with not existing images for now.
+     *
+     * @param imageCount the number of bitmaps that will be mixed to one image.
+     * @return MixedImageLazyRequestBuilder
      */
     public static MixedImageLazyRequestBuilder lazy(int imageCount) {
         return new MixedImageLazyRequestBuilder(imageCount);
