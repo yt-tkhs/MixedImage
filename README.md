@@ -57,7 +57,10 @@ imageUrls.forEachIndexed { index, imageUrl ->
 - size: set width and height of output image.
 - angle: `0 - 45` is recommend. If you set angle too large, it may throw OutOfMemoryException.
 
-### Licenses
+## Author
+- Yuta Takahashi ([@yt_hizi](https://twitter.com/yt_hizi))
+
+## Licence
 ```
 Copyright 2017 Yuta Takahashi.
 
