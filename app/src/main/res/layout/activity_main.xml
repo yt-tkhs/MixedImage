@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical"
+    tools:context="jp.yitt.mixedimage.example.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="#ccc"
+        android:scaleType="centerInside"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/widthText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minEms="4"
+            android:text="Width"/>
+
+        <TextView
+            android:id="@+id/heightText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/widthText"
+            android:layout_marginTop="16dp"
+            android:minEms="4"
+            android:text="Height"/>
+
+        <TextView
+            android:id="@+id/angleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/heightText"
+            android:layout_marginTop="16dp"
+            android:minEms="4"
+            android:text="Angle"/>
+
+        <SeekBar
+            android:id="@+id/widthSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/widthText"
+            android:layout_alignTop="@id/widthText"
+            android:layout_toRightOf="@id/widthText"
+            android:max="1280"/>
+
+        <SeekBar
+            android:id="@+id/heightSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/heightText"
+            android:layout_alignLeft="@id/widthSeekBar"
+            android:layout_alignTop="@id/heightText"
+            android:layout_below="@id/widthSeekBar"
+            android:max="1280"/>
+
+        <SeekBar
+            android:id="@+id/angleSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/angleText"
+            android:layout_alignLeft="@id/widthSeekBar"
+            android:layout_alignTop="@id/angleText"
+            android:max="45"/>
+    </RelativeLayout>
+
+</LinearLayout>
